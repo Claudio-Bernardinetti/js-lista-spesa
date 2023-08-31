@@ -11,17 +11,17 @@ const shoppingList = ['pane', 'pasta', 'olio', 'pomodori', 'sale'];
 
 // Fare un while loop per elencare gli ingredienti.
 
-let i = 0;
+let i = 0 ;
 
 while ( i < shoppingList.length) {
     
-    i++
     // Stampare la lista degli ingredienti
     
     let stampaEl = document.createElement('li')
-    stampaEl.innerText = shoppingList[i - 1];
+    stampaEl.innerText = shoppingList[i];
     document.querySelector('.stampa').appendChild(stampaEl);
-    console.log(shoppingList[i - 1]);
+    console.log(shoppingList[i]);
+    i++
 
 }
 
